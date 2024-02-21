@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+$putih : #EEEEEE;
+$merah : #B20600;
+$font1 : 'Montserrat', sans-serif;
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: $putih;
+}
+header{
+    background-color: black;
+    margin-top: 30px;
+    nav{
+        padding: 5px;
+        background-color: $merah;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        text-align: center;
+        z-index: 999;
+        ul{
+            padding-inline-start: 0;
+            li {
+                list-style-type: none;
+                display: inline;
+                margin-right: 20px;
+                a{
+                    padding: 5px;
+                    text-decoration: none;
+                    color: $putih;
+                    font-family: $font1;
+                    border-radius: 5px;
+                    transition: 0.5s;
+                }
+                a:hover{
+                    background-color: $putih;
+                    color: $merah;
+                    transition: 0.5s;
+                }
+             }
+        }
+    }
+    .jumbotron{
+        .top-img{
+            width: 100%;
+            opacity: 0.5;
+            position: relative;
+        }
+        .tagline{
+            #lg-title{
+                font-size: 70px;
+                margin: 0;
+            }
+            #sm-title{
+                margin: 0;
+            }
+            position: absolute;
+            z-index: 99;
+            text-align: center;
+            width: 100%;
+            top: 45%;
+            font-family: $font1;
+            color: $putih;
+        }
+    }
+}
+
+.navbar.cus-nav{
+    height: 40px !important;
+    box-shadow: 0px 0px 10px 2px #00092C;
+    transition: 0.5s;
+}
+.menu.cus-nav{
+    margin: 5px !important;
+    transition: 0.5s;
+}
+.navbar{
+    transition: 0.5s;
+}
+.menu{
+    transition: 0.5s;
+}
+
+main{
+    position: relative;
+    padding: 20px;
+    top: 20px;
+    overflow: auto;
+    #content{
+        float: left;
+        width: 75%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        border-radius: 5px;
+        #pahlawan{
+            .gridtokoh{
+                display: grid;
+                grid-column-gap: 50px;
+                grid-template-columns: auto auto auto;
+                padding: 10px;
+            }
+            .spacetokoh{
+                display: block;
+                margin: auto;
+                text-align: center;
+
+            }
+            .tokoh{
+                border-radius: 25px;
+                width: 250px;
+                display: block;
+                margin: auto;
+                height: 350px;
+                padding: 5px;
+            }
+            .namatokoh{
+                font-family: $font1;
+                text-align: center;
+            }
+        }
+        #geografis{
+            padding: 40px;
+            background-color: $merah;
+            border-radius: 25px;
+            .subjudul{
+                margin-top: 0;
+                color: $putih;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+.subjudul{
+    font-family: $font1;
+    margin: 0;
+    color: $merah;
+}
+.batas{
+    width: 100%;
+    float: left;
+    border: solid 2px;
+    margin-bottom: 20px;
+    border-color: #00092C;
+}
+.imgcontent{
+    width: 60%;
+    display: block;
+    margin: auto;
+    border-radius: 25px;
+}
+.textisi{
+    font-family: $font1;
+    text-align: justify;
+}
+
+aside {
+    float: right;
+    width: 23%;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    figure{
+        img{
+            width: 180px;
+            border-radius: 50%;
+            display: block;
+            margin: auto;
+        }
+    }
+    p{
+        text-align: center;
+        font-family: $font1;
+    }
+    #profname{
+        font-size: 20px;
+        margin: 0;
+        color: $merah;
+    }
+    #profdesc{
+        font-size: 13px;
+    }
+    ul{
+        margin: 0;
+        padding: 5px;
+        text-align: center;
+        li{
+            display: inline;
+            list-style-type: none;
+            font-family: $font1;
+            font-size: 13px;
+            margin: 5px;
+        }
+    }
+    .imgcontact{
+        width: 25px;
+        transition: 0.5s;
+    }
+    .imgcontact:hover{
+        width: 30px;
+        transition: 0.5s;
+    }
+}
+
+footer{
+    padding: 5px;
+    background-color: $merah;
+    margin-top: 20px;
+    p{
+        color: $putih;
+        text-align: center;
+        font-family: $font1;
+        font-size: 13px;
+    }
+}
+
+//RESPONSIVE
+@media (min-width: 320px) and (max-width: 600px) {
+    header{
+        .jumbotron{
+            .tagline{
+                #lg-title{
+                    font-size: 30px;
+                }
+                top: 22%;
+            }
+        }
+    }
+    main{
+        #content{
+            width: 100%;
+            #pahlawan{
+                .gridtokoh{
+                    display: block;
+                }
+            }
+        }
+    }
+    aside {
+       width: 100%;
+       padding: 0;
+       margin-top: 20px;
+   }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    header{
+        .jumbotron{
+            .tagline{
+                top: 22%;
+            }
+        }
+    }
+    main{
+        #content{
+            width: 100%;
+            #pahlawan{
+                .gridtokoh{
+                    display: block;
+                }
+            }
+        }
+    }
+    aside {
+       width: 100%;
+   }
+}

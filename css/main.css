@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #EEEEEE;
+}
+
+header {
+  background-color: black;
+  margin-top: 30px;
+}
+
+header nav {
+  padding: 5px;
+  background-color: #B20600;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 999;
+}
+
+header nav ul {
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+}
+
+header nav ul li {
+  list-style-type: none;
+  display: inline;
+  margin-right: 20px;
+}
+
+header nav ul li a {
+  padding: 5px;
+  text-decoration: none;
+  color: #EEEEEE;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 5px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+header nav ul li a:hover {
+  background-color: #EEEEEE;
+  color: #B20600;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+header .jumbotron .top-img {
+  width: 100%;
+  opacity: 0.5;
+  position: relative;
+}
+
+header .jumbotron .tagline {
+  position: absolute;
+  z-index: 99;
+  text-align: center;
+  width: 100%;
+  top: 45%;
+  font-family: "Montserrat", sans-serif;
+  color: #EEEEEE;
+}
+
+header .jumbotron .tagline #lg-title {
+  font-size: 70px;
+  margin: 0;
+}
+
+header .jumbotron .tagline #sm-title {
+  margin: 0;
+}
+
+.navbar.cus-nav {
+  height: 40px !important;
+  -webkit-box-shadow: 0px 0px 10px 2px #00092C;
+          box-shadow: 0px 0px 10px 2px #00092C;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.menu.cus-nav {
+  margin: 5px !important;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.navbar {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.menu {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+main {
+  position: relative;
+  padding: 20px;
+  top: 20px;
+  overflow: auto;
+}
+
+main #content {
+  float: left;
+  width: 75%;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+main #content #pahlawan .gridtokoh {
+  display: -ms-grid;
+  display: grid;
+  grid-column-gap: 50px;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+
+main #content #pahlawan .spacetokoh {
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+main #content #pahlawan .tokoh {
+  border-radius: 25px;
+  width: 250px;
+  display: block;
+  margin: auto;
+  height: 350px;
+  padding: 5px;
+}
+
+main #content #pahlawan .namatokoh {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
+main #content #geografis {
+  padding: 40px;
+  background-color: #B20600;
+  border-radius: 25px;
+}
+
+main #content #geografis .subjudul {
+  margin-top: 0;
+  color: #EEEEEE;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.subjudul {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  color: #B20600;
+}
+
+.batas {
+  width: 100%;
+  float: left;
+  border: solid 2px;
+  margin-bottom: 20px;
+  border-color: #00092C;
+}
+
+.imgcontent {
+  width: 60%;
+  display: block;
+  margin: auto;
+  border-radius: 25px;
+}
+
+.textisi {
+  font-family: "Montserrat", sans-serif;
+  text-align: justify;
+}
+
+aside {
+  float: right;
+  width: 23%;
+  padding: 10px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+aside figure img {
+  width: 180px;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+}
+
+aside p {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+aside #profname {
+  font-size: 20px;
+  margin: 0;
+  color: #B20600;
+}
+
+aside #profdesc {
+  font-size: 13px;
+}
+
+aside ul {
+  margin: 0;
+  padding: 5px;
+  text-align: center;
+}
+
+aside ul li {
+  display: inline;
+  list-style-type: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  margin: 5px;
+}
+
+aside .imgcontact {
+  width: 25px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+aside .imgcontact:hover {
+  width: 30px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+footer {
+  padding: 5px;
+  background-color: #B20600;
+  margin-top: 20px;
+}
+
+footer p {
+  color: #EEEEEE;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+}
+
+@media (min-width: 320px) and (max-width: 600px) {
+  header .jumbotron .tagline {
+    top: 22%;
+  }
+  header .jumbotron .tagline #lg-title {
+    font-size: 30px;
+  }
+  main #content {
+    width: 100%;
+  }
+  main #content #pahlawan .gridtokoh {
+    display: block;
+  }
+  aside {
+    width: 100%;
+    padding: 0;
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  header .jumbotron .tagline {
+    top: 22%;
+  }
+  main #content {
+    width: 100%;
+  }
+  main #content #pahlawan .gridtokoh {
+    display: block;
+  }
+  aside {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=main.css.map */
